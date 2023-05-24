@@ -1,0 +1,6 @@
+framework module Pods_OsonTask {
+  umbrella header "Pods-OsonTask-umbrella.h"
+
+  export *
+  module * { export * }
+}
