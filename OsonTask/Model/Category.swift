@@ -44,7 +44,4 @@ var categories: [Category] = [
     Category(id: 31, parentId: 3),
     Category(id: 32, parentId: 3),
 
-    Category(id: 300, parentId: 30),
-    Category(id: 310, parentId: 30),
-    Category(id: 320, parentId: 30),
 ]
