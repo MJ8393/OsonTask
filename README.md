@@ -91,3 +91,5 @@ var categories: [Category] = [
        10  11 12        20 21 22            30 31 32
 
 - Dasturimiz esha quyidagi natijani chiqaradi: 
+
+ ![Simulator Screenshot - iPhone 14 Pro - 2023-05-25 at 04 58 19](https://github.com/MJ8393/OsonTask/assets/108180424/702c61d3-5c42-4efa-97e1-88b000ab7f70)
