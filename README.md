@@ -63,7 +63,7 @@ var categories: [Category] = [
     ```
 - Algorithm: 
 - Birinchi qadamda massivimizdan dictionary(lug'at) yaratib olamiz. Bunda lug'atning key qiymati categoryning id si, value qiymati esa category ga teng bo'ladi. 
-- Ikkinchi qadamda massiving elementi uchun parent aniqlanadi va element parenting childs massiviga qo'shiladi. Yakunda, category mapdagi parentning  qitmati yangilanadi. 
+- Ikkinchi qadamda massiving elementi uchun parent aniqlanadi va element parentning childs massiviga qo'shiladi. Yakunda, category mapdagi parentning  qiymati yangilanadi. 
 - So'ngi qadamda biz root categorylarni filter methodi yordamizda ajratib olamiz. 
     ```swift
     func makeTree(list: [Category]) {
