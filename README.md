@@ -21,6 +21,7 @@ func makeTree(list: [Category]) -> [Category] { // algorithm
 - Bizga tartiblanmagan Category massivi berilgan. Vazifa massivni Tree data structure yordamida tartiblashdan iborat.
 
 Masalan: 
+```swift
 var categories: [Category] = [
     Category(id: 1, parentId: 0),
     Category(id: 2, parentId: 0),
@@ -38,9 +39,9 @@ var categories: [Category] = [
     Category(id: 31, parentId: 3),
     Category(id: 32, parentId: 3),
 ]
-
+```
 - Bizning Category structimiz quyidagicha. addChild mutating funksiyamiz bizga shu categoryning childs o'zgaruvchisiga element qo'shish uchun yaratilgan.
-
+    ```swift
     struct Category {
         var id: Int?
         var parentId: Int?
@@ -59,12 +60,12 @@ var categories: [Category] = [
             }
         }
     }
-
+    ```
 - Algorithm: 
 - Birinchi qadamda massivimizdan dictionary(lug'at) yaratib olamiz. Bunda lug'atning key qiymati categoryning id si, value qiymati esa category ga teng bo'ladi. 
 - Ikkinchi qadamda massiving elementi uchun parent aniqlanadi va element parenting childs massiviga qo'shiladi. Yakunda, category mapdagi parentning  qitmati yangilanadi. 
 - So'ngi qadamda biz root categorylarni filter methodi yordamizda ajratib olamiz. 
-
+    ```swift
     func makeTree(list: [Category]) {
         var categoryMap = [Int: Category]()
         
@@ -84,12 +85,14 @@ var categories: [Category] = [
         // Filter Root Categories
         orderedCategories = Array(categoryMap.values.filter { $0.parentId == 0 })
     }
-
+    ```
 - Yuqoridaagi input uchun tree quyidagi ko'rinishda bo'ladi:
+```
                             0
             1               2                   3
        10  11 12        20 21 22            30 31 32
+```
 
-- Dasturimiz esha quyidagi natijani chiqaradi: 
+- Dasturimiz quyidagi natijani chiqaradi: 
 
  ![Simulator Screenshot - iPhone 14 Pro - 2023-05-25 at 04 58 19](https://github.com/MJ8393/OsonTask/assets/108180424/702c61d3-5c42-4efa-97e1-88b000ab7f70)
